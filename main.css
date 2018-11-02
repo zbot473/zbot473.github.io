@@ -1,0 +1,216 @@
+body {
+    font-family: 'Merriweather', serif;
+    background-color: khaki
+}
+
+table {
+    border-spacing: 3px;
+}
+
+.periodtable {
+    height: 70px;
+    min-width: 50px
+}
+
+.properties {
+    font-family: 'Times', serif;
+    font-size: 15pt;
+    border-collapse: collapse;
+    border: 1px solid black;
+
+}
+
+.bold {
+    font-weight: 600
+}
+
+.select {
+    animation-name: out;
+    animation-duration: 0.1s;
+    -webkit-animation-name: out;
+    -webkit-animation-duration: 0.1s;
+}
+
+.select:hover {
+    animation-name: in;
+    animation-duration: 0.1s;
+    -webkit-animation-name: in;
+    -webkit-animation-duration: 0.1s;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease-in-out;
+    transform: translate(-5px, -5px);
+    z-index: 1;
+    position: relative;
+}
+
+@keyframes in {
+    from {
+        transition: all 0.1s ease-in-out;
+        transform: translate(0px, 0px);
+    }
+
+    to {
+        transition: all 0.1s ease-in-out;
+        transform: translate(-5px, -5px);
+    }
+}
+
+@keyframes out {
+    from {
+        transition: all 0.1s ease-in-out;
+        transform: translate(-5px, -5px);
+    }
+
+    to {
+        transition: all 0.1s ease-in-out;
+        transform: translate(0px, 0px);
+    }
+}
+
+.hovered {
+    animation-name: in;
+    animation-duration: 0.1s;
+    -webkit-animation-name: in;
+    -webkit-animation-duration: 0.1s;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ease-in-out;
+    transform: translate(-5px, -5px);
+    z-index: 1;
+    position: relative;
+}
+
+.unhovered {
+    animation-name: out;
+    animation-duration: 0.1s;
+    -webkit-animation-name: out;
+    -webkit-animation-duration: 0.1s;
+}
+
+.group {
+    color: white;
+    font-size: 16pt;
+}
+
+.group:hover {
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 47%, rgba(255, 255, 255, 0.66) 66%, rgba(39, 147, 219, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 47%, rgba(255, 255, 255, 0.66) 66%, rgba(39, 147, 219, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 47%, rgba(255, 255, 255, 0.66) 66%, rgba(39, 147, 219, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#2793db', GradientType=0);
+}
+
+.period {
+    color: white;
+    font-size: 16pt;
+    width: 30px
+}
+
+.spacer {
+
+    height: 30px;
+}
+
+.period:hover {
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 47%, rgba(255, 255, 255, 0.66) 66%, rgba(39, 147, 219, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 47%, rgba(255, 255, 255, 0.66) 66%, rgba(39, 147, 219, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.47) 47%, rgba(255, 255, 255, 0.66) 66%, rgba(39, 147, 219, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#2793db', GradientType=0);
+}
+
+.nonmetal {
+    background-color: #00A57D;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.noblegas {
+    background-color: #732484;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.innertransition {
+    background-color: #FFD401;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.transition {
+    background-color: #FDAD00;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.alkali {
+    background-color: #EA0001;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.alkaline {
+    background-color: #F15701;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.metalloid {
+    background-color: #9DC816;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.halogen {
+    background-color: #0182C3;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.lanthanoid {
+    background-color: #C9A06C;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.actinoid {
+    background-color: #A4ACC1;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
+
+.unknown {
+    background-color: #91A491;
+    border: 3px solid white;
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    text-shadow: 2px 2px black
+}
