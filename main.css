@@ -9,7 +9,12 @@ table {
 
 .periodtable {
     height: 70px;
-    min-width: 50px
+    min-width: 50px;
+ 
+}
+
+td {
+    min-height: 100%
 }
 
 .properties {
@@ -17,7 +22,6 @@ table {
     font-size: 15pt;
     border-collapse: collapse;
     border: 1px solid black;
-
 }
 
 .bold {
@@ -48,7 +52,6 @@ table {
         transition: all 0.1s ease-in-out;
         transform: translate(0px, 0px);
     }
-
     to {
         transition: all 0.1s ease-in-out;
         transform: translate(-5px, -5px);
@@ -60,7 +63,6 @@ table {
         transition: all 0.1s ease-in-out;
         transform: translate(-5px, -5px);
     }
-
     to {
         transition: all 0.1s ease-in-out;
         transform: translate(0px, 0px);
@@ -105,7 +107,6 @@ table {
 }
 
 .spacer {
-
     height: 30px;
 }
 
