@@ -13,25 +13,28 @@ function showProperty(html) {
     })
     var elementJson = elementsel["0"]
 
-    var name = document.getElementById("name")
-    var anumber = document.getElementById("anumber")
-    var econfig = document.getElementById("econfig")
-    var ostate = document.getElementById("ostate")
-    var aradius = document.getElementById("aradius")
-    var eneg = document.getElementById("eneg")
-    var state = document.getElementById("state")
-    var mpoint = document.getElementById("mpoint")
-    var bpoint = document.getElementById("bpoint")
-
+    var name = document.getElementById("name");
+    var anumber = document.getElementById("anumber");
+    var econfig = document.getElementById("econfig");
+    var ostate = document.getElementById("ostate");
+    var aradius = document.getElementById("aradius");
+    var eneg = document.getElementById("eneg");
+    var state = document.getElementById("state");
+    var mpoint = document.getElementById("mpoint");
+    var bpoint = document.getElementById("bpoint");
+    var amass = document.getElementById("amass");
+    var ienergy = document.getElementById("ienergy");
+    var density = document.getElementById("density");
     name.innerHTML = elementJson.name;
-    anumber.innerHTML = elementJson.atomicNumber
+    anumber.innerHTML = elementJson.atomicNumber;
     econfig.innerHTML = elementJson.electronicConfiguration;
     ostate.innerHTML = elementJson.oxidationStates;
     aradius.innerHTML = elementJson.atomicRadius;
     eneg.innerHTML = elementJson.electronegativity;
     state.innerHTML = elementJson.standardState;
-    mpoint.innerHTML = elementJson.meltingPoint + "˚C"
-    bpoint.innerHTML = elementJson.boilingPoint + "˚C"
+    
+    mpoint.innerHTML = elementJson.meltingPoint + "˚C";
+    bpoint.innerHTML = elementJson.boilingPoint + "˚C";
 }
 
 function hideProperty() {
