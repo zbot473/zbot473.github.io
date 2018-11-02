@@ -29,10 +29,11 @@ function showProperty(html) {
     anumber.innerHTML = elementJson.atomicNumber;
     econfig.innerHTML = elementJson.electronicConfiguration;
     ostate.innerHTML = elementJson.oxidationStates;
-    aradius.innerHTML = elementJson.atomicRadius;
+    aradius.innerHTML = elementJson.atomicRadius +"pm";
     eneg.innerHTML = elementJson.electronegativity;
     state.innerHTML = elementJson.standardState;
-    
+    ienergy.innerHTML = elementJson.ionizationEnergy+"kJ/mol";
+    amass.innerHTML = elementJson.atomicMass+"amu";
     mpoint.innerHTML = elementJson.meltingPoint + "˚C";
     bpoint.innerHTML = elementJson.boilingPoint + "˚C";
 }
