@@ -27,15 +27,55 @@ function showProperty(html) {
     name.innerHTML = elementJson.name;
     anumber.innerHTML = elementJson.atomicNumber;
     econfig.innerHTML = elementJson.electronicConfiguration;
-    ostate.innerHTML = elementJson.oxidationStates;
-    aradius.innerHTML = elementJson.atomicRadius + " pm";
-    eneg.innerHTML = elementJson.electronegativity;
-    state.innerHTML = elementJson.standardState;
-    density.innerHTML = elementJson.density + "g/cm" + "3".sup();
-    ienergy.innerHTML = elementJson.ionizationEnergy + " kJ/mol";
     amass.innerHTML = elementJson.atomicMass + " amu";
-    mpoint.innerHTML = elementJson.meltingPoint + "˚C";
-    bpoint.innerHTML = elementJson.boilingPoint + "˚C";
+    if (elementJson.oxidationStates){
+        ostate.innerHTML = elementJson.oxidationStates;
+    }
+    else { 
+        ostate.innerHTML = "Unknown"
+    }
+    if (elementJson.vanDelWaalsRadius){
+        aradius.innerHTML = elementJson.vanDelWaalsRadius + " pm";
+    }
+    else { 
+        aradius.innerHTML = "Unknown"
+    }
+    if (elementJson.electronegativity){
+        eneg.innerHTML = elementJson.electronegativity;
+    }
+    else { 
+        eneg.innerHTML = "Unknown"
+    }
+    if (elementJson.standardState){
+        state.innerHTML = elementJson.standardState;
+    }
+    else { 
+        state.innerHTML = "Unknown"
+    }
+    if (elementJson.density){
+        density.innerHTML = elementJson.density + "g/cm" + "3".sup();
+    }
+    else { 
+        density.innerHTML = "Unknown"
+    }
+    if (elementJson.ionizationEnergy){
+        ienergy.innerHTML = elementJson.ionizationEnergy + " kJ/mol";
+    }
+    else { 
+        ienergy.innerHTML = "Unknown"
+    }
+    if (elementJson.meltingPoint){
+        mpoint.innerHTML = elementJson.meltingPoint + "˚C";
+    }
+    else { 
+        mpoint.innerHTML = "Unknown"
+    }
+    if (elementJson.boilingPoint){
+        bpoint.innerHTML = elementJson.boilingPoint + "˚C";
+    }
+    else { 
+        bpoint.innerHTML = "Unknown"
+    }
 }
 
 function hideProperty() {
