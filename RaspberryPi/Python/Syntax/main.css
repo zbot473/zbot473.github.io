@@ -1,0 +1,52 @@
+.shell {
+    color: #8B0F00 !important;
+    display: inline;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.error {
+    color: #FF2600 !important;
+    display: inline;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.builtin {
+    color: #A325A1 !important;
+    display: inline;
+}
+
+.normaltext{
+    color: black !important;
+    display: inline;
+}
+
+.stdout {
+    color: #0433FF !important;
+    display: inline;
+    
+}
+
+.string {
+    color: #00B400 !important;
+    display: inline;
+}
+.first::before{
+    content: "\A";
+}
+.final::after{
+    content: "\A";
+}
+.inline{
+    display: inline;
+}
+

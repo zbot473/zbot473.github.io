@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Python Syntax</title>
+    <link rel="icon" type="image/png" href="https://avatars1.githubusercontent.com/u/13140490?s=40&v=4">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../../materialize.css" />
+    <script src="main.js"></script>
+    <script src="../../../materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="idle.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="highlight.pack.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script>
+</head>
+
+<body>
+    <nav class="white">
+        <a href="#" data-target="slide-out" class="sidenav-trigger green-text"><i class="material-icons">menu</i></a>
+        <div class="center-align white black-text" style="font-size:30px;right: -5px;width: 100%; position: absolute;">Python</div>
+    </nav>
+    <h3 class="center" style="width:fit-content;margin:10px auto 10px auto">Python Syntax</h3>
+    <div class="divider center" style="margin:auto;width:220px"></div>
+    <ul id="slide-out" class="sidenav-close sidenav">
+        <li><a class="subheader">Steps</a></li>
+        <li><a href="#materials">Materials</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#operators">Operators</a></li>
+        <li><a href="#strings">Strings</a></li>
+    </ul>
+    <h4 class="center" id="materials">Materials</h4>
+    <div class="divider center" style="width:110px;margin: auto"></div>
+    <div>
+        <ol style="padding-left:100px">
+            <li>Chromebook</li>
+            <li>Laptop</li>
+        </ol>
+    </div>
+    <h4 class="center" id="Introduction">Introduction</h4>
+    <div class="divider center" style="width:80px;margin: auto;"></div>
+    <div class="left" style="padding-left:85px; padding-right:85px;">
+        When you open your python installation, you should have the interpreter in front of you.
+        If you press enter you will see something like this:
+        <pre class="shell first final">>>></pre>
+        If you try typing something that isn't a function or incorrect syntax, you will get something like this:
+        <pre class="shell first">>>></pre>
+        <pre class="final" style="display:inline">thisissomethingwrong</pre>
+        <pre class="error">
+            Traceback (most recent call last):
+              File &quot;&lt;pyshell#1>", line 1, in &lt;module>
+                thisissomethingwrong
+            NameError: name 'thisissomethingwrong' is not defined</pre>
+        <br>
+        However, if we use something that <i>is</i> a function, then it will show something like this:
+        <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="string">"This will work"</pre>)
+        <br>
+        <pre class="stdout final">This will work</pre>
+        Let's break that down.
+        <pre class="builtin">print</pre> is a builtin function. Whatever value we pass
+        into the
+        <pre class="builtin">print</pre> function in between the two parentheses will
+        be printed out in
+        <pre class="stdout">blue</pre> text. For example, we passed in a
+        <a href="#strings">
+            <pre class="string">&quot;string"</pre></a>, and the function returned it.
+        We could also pass in a number. For example:
+        <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="normaltext">42</pre>)<br>
+        <pre class="stdout final">42</pre>
+        <h6>Note:</h6>
+        The colors and font may be different in your python installation.
+    </div>
+    <div id="operators" style="margin-top:270px">
+        <h4 class="center">Operators</h4>
+        <div class="divider center" style="width:80px;margin: auto;"></div>
+        <div class="left" style="padding-left:85px; padding-right:85px">
+            <div style="width:fit-content">
+                <pre><code class="python">+ #Add: 1+2=3 you can also add two strings together.
+- #Subtract: 2-1=1
+* #Multiply: 3*2=6
+/ #Divide: 10/2=5 
+** #Exponent: 2<sup>3</sup> and 2**3=8 mean the same thing, using anything else to calculate exponents won't work.
+// #Divide and only keep the integer part: 5//3 = 1
+% #Get the remainder of the division: 10%3 = 1
+</code></pre>
+            </div>
+        </div>
+
+        <div id="strings" style="margin-top:270px">
+            <h4 class="center">Strings</h4>
+            <div class="divider center" style="width:80px;margin: auto;"></div>
+            <div class="left" style="padding-left:85px; padding-right:85px">
+                Strings are sequences of characters. A string is enclosed is enclosed in
+                two sets of single or double quotes like
+                <pre class="string">'this'</pre>
+                or
+                <pre class="string">"this"</pre>. They can contain pretty much anything. However, they cannot be changed.
+                You can output strings by using
+                <pre class="builtin">print</pre>. What's intresting is that you can add 
+                two strings together. For example: 
+                <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="string">"string1"</pre>+<pre class="string">"string2"</pre>) <br>
+                <pre class="stdout final">string1string2</pre>
+                One thing to know is that you need to manually add a space between two strings.
+                <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="string">"string1 "</pre>+<pre class="string">"string2"</pre>) <br>
+                <pre class="stdout final">string1 string2</pre>
+                We can also multiply strings like this:
+                <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="string">"hi "</pre> <pre class="normaltext">* 10</pre>) <br>
+                <pre class="stdout final">hi hi hi hi hi hi hi hi hi hi </pre>
+                To convert numbers to string use <pre class="builtin">str</pre>. Here's how that works:
+                <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="string">"The number is: " </pre>+ <pre class="builtin">str</pre>(1234)) <br>
+                <pre class="stdout final">The number is: 1234</pre>
+                To find the length of strings, you can use <pre class="builtin">len</pre>.
+                <pre class="shell first">>>> </pre><pre class="builtin">print</pre>(<pre class="builtin">len</pre>(<pre class="string">"abcdefghijklmnopqrstuvwxyz"</pre>)) <br>
+                <pre class="stdout final">26</pre>
+            </div>
+        </div>
+
+</body>
+
+</html>
