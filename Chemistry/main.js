@@ -8,10 +8,9 @@ req.send();
 
 function showProperty(html) {
     document.getElementById("propertytable").removeAttribute("hidden")
-    var elementsel = elements.filter(function(elements) {
+    var elementJson = elements.filter(function(elements) {
         return elements.symbol == html.innerHTML
-    })
-    var elementJson = elementsel["0"]
+    })["0"]
     var name = document.getElementById("name");
     var anumber = document.getElementById("anumber");
     var econfig = document.getElementById("econfig");
@@ -27,6 +26,8 @@ function showProperty(html) {
     name.innerHTML = elementJson.name;
     anumber.innerHTML = elementJson.atomicNumber;
     econfig.innerHTML = elementJson.electronicConfiguration;
+    sublevels = elementJson.electronicConfiguration
+    console.log(sublevels)
     amass.innerHTML = elementJson.atomicMass + " amu";
     if (elementJson.oxidationStates){
         ostate.innerHTML = elementJson.oxidationStates;
