@@ -3,7 +3,7 @@ var elements;
 req.onload = function() {
     elements = JSON.parse(this.responseText)
 };
-req.open('GET', 'https://raw.githubusercontent.com/zbot473/Periodic-Table/master/properties.json');
+req.open('GET', 'https://raw.githubusercontent.com/zbot473/zbot473.github.io/master/Chemistry/properties.json');
 req.send();
 
 function showProperty(html) {
